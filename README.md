@@ -8,7 +8,7 @@ author: Jintang Li
 
 Graph Neural Networks (GNNs) have received a considerable amount of attention in recent years, which has achieved excellent performance in many graph analysis tasks such as node classification, link prediction, and graph clustering. However, more and more researches have pointed out the *vulnerability* of GNNs, that is, they are easily affected by several will-designed inputs. As shown in Fig.1, slightly modifying the existence of either edges or nodes may lead to the wrong prediction of the target node. Such unreliable results provide the opportunity for attackers to exploit these vulnerabilities and restrict the applications of GNNs.
 
-<p align="center"> <img  width = "500"  height =420 src="https://github.com/EdisonLeeeee/Introduction_to_graph_adversarial_learning/blob/master/demo.jpg" />
+<p align="center"> <img  width = "500"  height =420 src="https://github.com/EdisonLeeeee/Introduction_to_graph_adversarial_learning/blob/main/demo.jpg" />
 
 *Fig. 1. A misclassification of the target caused by a small perturbations of the graph structure and node features.*
 
@@ -116,31 +116,86 @@ So far, there are more than 190 works towards this area[21]. Despite a surge of 
 # Conclusion
 GNNs are vulnerable to adversarial attacks on the graph. we begin by giving an review of adversarial machine learning on graph, from the perspectives of attack, defense, robustness certification and evaluation metrics, followed by several problems of this area that worth exploring. Hopefully, this review can provide a comprehensive overview and offer insights for the relevant researchers
 
+
 # Reference
-[1] Xu K, Chen H, Liu S, et al. Topology attack and defense for graph neural networks: An optimization perspectiv[C]. IJCAI, 2019.
-[2] Tang X, Li Y, Sun Y, et al. Transferring robustness for graph neural network against poisoning attacks[C]. WSDM, 2020.
-[3] Zhu D, Zhang Z, Cui P, et al. Robust graph convolutional networks against adversarial attacks[C]. KDD, 2019.
-[4] Wu H, Wang C, Tyshetskiy Y, et al. Adversarial examples on graph data: Deep insights into attack and defense[C]. IJCAI, 2019.
-[5] Zhou K, Michalak T P, Vorobeychik Y. Adversarial robustness of similarity-based link prediction[C]. ICDM, 2019.
-[6] Zügner D, Akbarnejad A, Günnemann S. Adversarial attacks on neural networks for graph data[C]. KDD, 2018.
-[7] Zügner D, Günnemann S. Adversarial attacks on graph neural networks via meta learning[C]. ICLR, 2019.
-[8] Li J, Zhang H, Han Z, et al. Adversarial attack on community detection by hiding individuals[C]. WWW, 2020.
-[9] Zügner D, Borchert O, Akbarnejad A, et al. Adversarial attacks on graph neural networks: Perturbations and their patterns[J]. TKDD, 2020.
-[10] Zhang Z, Zhang Z, Zhou Y, et al. Adversarial Attacks on Deep Graph Matching[J]. NeurIPS, 2020.
-[11] Chen L, Li J, Peng J, et al. A survey of adversarial learning on graphs[J]. arXiv preprint arXiv:2003.05730, 2020.
-[12] Wang S, Chen Z, Ni J, et al. Adversarial defense framework for graph neural network[J]. arXiv preprint arXiv:1905.03679, 2019.
-[13] Thomas N. Kipf and Max Welling. Semi-Supervised Classification with Graph Convolutional Networks[C]. ICLR 2017.
-[14] Li J, Xie T, Chen L, et al. Adversarial attack on large scale graph[J]. arXiv preprint arXiv:2009.03488, 2020.
-[15] Wu F, Souza A, Zhang T, et al. Simplifying graph convolutional networks[C]. ICLR, 2019: 6861-6871.
-[16] Zügner D, Günnemann S. Certifiable robustness and robust training for graph convolutional networks[C]. KDD, 2019.
-[17] Ding D, Zhang M, Pan X, et al. Improving the Robustness of Wasserstein Embedding by Adversarial PAC-Bayesian Learning[C]. AAAI, 2020.
-[18] Jin H, Shi Z, Peruri A, et al. Certified Robustness of Graph Convolution Networks for Graph Classification under Topological Attacks[J]. NeurIPS, 2020.
-[19] Zügner D, Günnemann S. Certifiable robustness of graph convolutional networks under structure perturbations[C]. KDD, 2020.
-[20] Gao Z, Hu R, Gong Y. Certified Robustness of Graph Classification against Topology Attack with Randomized Smoothing[C]. NeurIPS, 2020.
+
+[1] Xu K, Chen H, Liu S, et al. Topology attack and defense for 
+graph neural networks: An optimization perspectiv[C]. IJCAI, 2019.
+
+[2] Tang X, Li Y, Sun Y, et al. Transferring robustness for graph 
+neural network against poisoning attacks[C]. WSDM, 2020.
+
+[3] Zhu D, Zhang Z, Cui P, et al. Robust graph convolutional 
+networks against adversarial attacks[C]. KDD, 2019.
+
+[4] Wu H, Wang C, Tyshetskiy Y, et al. Adversarial examples on 
+graph data: Deep insights into attack and defense[C]. IJCAI, 2019.
+
+[5] Zhou K, Michalak T P, Vorobeychik Y. Adversarial robustness 
+of similarity-based link prediction[C]. ICDM, 2019.
+
+[6] Zügner D, Akbarnejad A, Günnemann S. Adversarial attacks on 
+neural networks for graph data[C]. KDD, 2018.
+
+[7] Zügner D, Günnemann S. Adversarial attacks on graph neural 
+networks via meta learning[C]. ICLR, 2019.
+
+[8] Li J, Zhang H, Han Z, et al. Adversarial attack on community 
+detection by hiding individuals[C]. WWW, 2020.
+
+[9] Zügner D, Borchert O, Akbarnejad A, et al. Adversarial 
+attacks on graph neural networks: Perturbations and their patterns
+[J]. TKDD, 2020.
+
+[10] Zhang Z, Zhang Z, Zhou Y, et al. Adversarial Attacks on Deep 
+Graph Matching[J]. NeurIPS, 2020.
+
+[11] Chen L, Li J, Peng J, et al. A survey of adversarial 
+learning on graphs[J]. arXiv preprint arXiv:2003.05730, 2020.
+
+[12] Wang S, Chen Z, Ni J, et al. Adversarial defense framework 
+for graph neural network[J]. arXiv preprint arXiv:1905.03679, 
+2019.
+
+[13] Thomas N. Kipf and Max Welling. Semi-Supervised 
+Classification with Graph Convolutional Networks[C]. ICLR 2017.
+
+[14] Li J, Xie T, Chen L, et al. Adversarial attack on large 
+scale graph[J]. arXiv preprint arXiv:2009.03488, 2020.
+
+[15] Wu F, Souza A, Zhang T, et al. Simplifying graph 
+convolutional networks[C]. ICLR, 2019: 6861-6871.
+
+[16] Zügner D, Günnemann S. Certifiable robustness and robust 
+training for graph convolutional networks[C]. KDD, 2019.
+
+[17] Ding D, Zhang M, Pan X, et al. Improving the Robustness of 
+Wasserstein Embedding by Adversarial PAC-Bayesian Learning[C]. 
+AAAI, 2020.
+
+[18] Jin H, Shi Z, Peruri A, et al. Certified Robustness of Graph 
+Convolution Networks for Graph Classification under Topological 
+Attacks[J]. NeurIPS, 2020.
+
+[19] Zügner D, Günnemann S. Certifiable robustness of graph 
+convolutional networks under structure perturbations[C]. KDD, 
+2020.
+
+[20] Gao Z, Hu R, Gong Y. Certified Robustness of Graph 
+Classification against Topology Attack with Randomized Smoothing
+[C]. NeurIPS, 2020.
+
 [21] https://github.com/gitgiter/Graph-Adversarial-Learning
+
 [22] https://github.com/rusty1s/pytorch_geometric
+
 [23] https://github.com/dmlc/dgl
+
 [24] https://github.com/bethgelab/foolbox
+
 [25] https://github.com/cleverhans-lab/cleverhans
+
+
+
 
 
